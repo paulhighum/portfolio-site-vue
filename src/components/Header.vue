@@ -69,21 +69,18 @@ a {
     margin-right: 10px;
     cursor: pointer;
     font-size: 1.5rem;
-    padding: 3px;
-    border-radius: 5px;
-    transition: background-color 1s;
   }
 
   #desktop-nav a {
     transition: color 1s;
-  }
-
-  #desktop-nav li:hover {
-    background-color: white;
+    transition: background-color 1s;
+    padding: 3px;
+    border-radius: 5px;
   }
 
   #desktop-nav a:hover {
     color: rgb(48, 134, 213);
+    background-color: white;
   }
 
   #mobile-nav {
@@ -111,7 +108,7 @@ a {
     transition: all .3s ease;
   }
   .slide-fade-leave-active {
-    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
   .slide-fade-enter, .slide-fade-leave-to
   /* .slide-fade-leave-active below version 2.1.8 */ {

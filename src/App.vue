@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Animation />
-    <Projects />
+    <Projects :projects="projects"/>
   </div>
 </template>
 
@@ -20,7 +20,32 @@ export default {
   },
   data() {
     return {
-
+      projects: [
+        {
+          id: 1,
+          name: "Daily Animal Fact",
+          img: "../static/daf-home.png",
+          description: "A description"
+        },
+        {
+          id: 2,
+          name: "Daily Animal Fact",
+          img: "../static/daf-home.png",
+          description: "A description"
+        },
+        {
+          id: 3,
+          name: "Daily Animal Fact",
+          img: "../static/daf-home.png",
+          description: "A description"
+        },
+        {
+          id: 4,
+          name: "Daily Animal Fact",
+          img: "../static/daf-home.png",
+          description: "A description"
+        }
+      ]
     }
   },
   methods: {

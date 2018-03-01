@@ -12,7 +12,7 @@ export default {
 
 <style lang="css">
 #Animation {
-  min-height: 60vmin;
+  min-height: 80vmin;
   background-color: rgb(114, 198, 107);
 }
 </style>
