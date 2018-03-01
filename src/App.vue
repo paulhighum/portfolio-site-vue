@@ -2,18 +2,21 @@
   <div id="app">
     <Header />
     <Animation />
+    <Projects />
   </div>
 </template>
 
 <script>
 import Animation from "./components/Animation"
 import Header from "./components/Header"
+import Projects from "./components/Projects"
 
 export default {
   name: 'App',
   components: {
     Animation,
-    Header
+    Header,
+    Projects,
   },
   data() {
     return {

@@ -79,7 +79,6 @@ h1 {
   #mobile-nav img {
     height: 10vmin;
     width: 10vmin;
-    background-color: rgb(48, 134, 213);
   }
 
   .slide-fade-enter-active {
@@ -93,11 +92,7 @@ h1 {
     transform: translateX(10px);
     opacity: 0;
   }
-
-  #mobile-nav p {
-    background-color: rgb(48, 134, 213);
-  }
-
+  
   #mobile-nav ul {
     display: flex;
     min-width: 30vmin;
