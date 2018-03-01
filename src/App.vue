@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Header />
+    <Animation />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Animation from "./components/Animation"
+import Header from "./components/Header"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Animation,
+    Header
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    methodName() {
+
+    }
   }
 }
 </script>
@@ -23,6 +35,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  min-height: 100vh;
+  width: 100%;
 }
+
 </style>

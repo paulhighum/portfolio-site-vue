@@ -1,6 +1,6 @@
 # portfolio-vue
 
-> Vue developer portfolio site
+> Vue portfolio site for my Developer Career.
 
 ## Build Setup
 
