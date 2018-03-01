@@ -4,18 +4,18 @@
     <div class="menu" id="mobile-nav">
       <img src="../../static/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle"/>
       <transition-group name="slide-fade" tag="ul">
-          <li v-if="menuToggle" key="Projects"><a>Projects</a></li>
-          <li v-if="menuToggle" key="Resume"><a>Resume</a></li>
-          <li v-if="menuToggle" key="About"><a>About</a></li>
-          <li v-if="menuToggle" key="Contact"><a>Contact</a></li>
+          <li v-if="menuToggle" key="Projects"><a href="#Projects">Projects</a></li>
+          <li v-if="menuToggle" key="Resume"><a href="#Resume">Resume</a></li>
+          <li v-if="menuToggle" key="About"><a href="#About">About</a></li>
+          <li v-if="menuToggle" key="Contact"><a hre="#Contact">Contact</a></li>
       </transition-group>
     </div>
     <div class="menu" id="desktop-nav">
       <ul>
-        <li><a>Projects</a></li>
-        <li><a>Resume</a></li>
-        <li><a>About</a></li>
-        <li><a>Contact</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -46,10 +46,19 @@ export default {
 
 h1 {
   margin-left: 10px;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 686px) {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 610px) {
+
+  #Header {
+    height: 8vmin;
+  }
 
   #desktop-nav ul {
     display: flex;
@@ -58,6 +67,23 @@ h1 {
 
   #desktop-nav li {
     margin-right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 3px;
+    border-radius: 5px;
+    transition: background-color 1s;
+  }
+
+  #desktop-nav a {
+    transition: color 1s;
+  }
+
+  #desktop-nav li:hover {
+    background-color: white;
+  }
+
+  #desktop-nav a:hover {
+    color: rgb(48, 134, 213);
   }
 
   #mobile-nav {
@@ -65,7 +91,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 686px) {
+@media screen and (max-width: 610px) {
   #desktop-nav {
     display: none;
   }
@@ -92,7 +118,7 @@ h1 {
     transform: translateX(10px);
     opacity: 0;
   }
-  
+
   #mobile-nav ul {
     display: flex;
     min-width: 30vmin;
