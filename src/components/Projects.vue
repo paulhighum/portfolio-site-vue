@@ -36,7 +36,7 @@ export default {
 
 h2 {
   color: rgb(48, 134, 213);
-  margin: 2px 0 0 0;
+  margin: 3px 0;
 }
 
 @media screen and (min-width: 749px) {
@@ -54,11 +54,11 @@ h2 {
     padding: 0.25vw;
   }
 
-  .card h2 {
+  h2 {
     font-size: 1.5rem;
   }
 
-  .card img {
+  img {
     max-width: 20vw;
     max-height: 20vw;
   }
@@ -77,7 +77,11 @@ h2 {
     margin: 1vmin;
   }
 
-  .card img {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  img {
     max-width: 40vmin;
     max-height: 40vmin;
   }
@@ -90,9 +94,13 @@ h2 {
     margin: 1vmin;
   }
 
-  .card img {
+  img {
     max-width: 60vmin;
     max-height: 60vmin;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
 </style>

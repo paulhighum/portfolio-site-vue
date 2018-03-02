@@ -29,13 +29,13 @@ export default {
         },
         {
           id: 2,
-          name: "Daily Animal Fact",
-          img: "../static/daf-home.png",
+          name: "Planet Wager",
+          img: "../static/pw-home.png",
           description: "A description"
         },
         {
           id: 3,
-          name: "Daily Animal Fact",
+          name: "Pixel Painter",
           img: "../static/daf-home.png",
           description: "A description"
         },

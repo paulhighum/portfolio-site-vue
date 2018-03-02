@@ -42,6 +42,8 @@ export default {
   background-color: rgb(48, 134, 213);
   color: white;
   height: 20vmin;
+  position: fixed;
+  width: 100vw;
 }
 
 h1 {
