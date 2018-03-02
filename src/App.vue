@@ -4,6 +4,7 @@
     <Animation />
     <Projects :projects="projects"/>
     <Resume />
+    <About />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Animation from "./components/Animation"
 import Header from "./components/Header"
 import Projects from "./components/Projects"
 import Resume  from "./components/Resume"
+import About  from "./components/About"
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     Header,
     Projects,
     Resume,
+    About,
   },
   data() {
     return {
