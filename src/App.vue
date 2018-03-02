@@ -3,6 +3,7 @@
     <Header />
     <Animation />
     <Projects :projects="projects"/>
+    <Resume />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Animation from "./components/Animation"
 import Header from "./components/Header"
 import Projects from "./components/Projects"
+import Resume  from "./components/Resume"
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     Animation,
     Header,
     Projects,
+    Resume,
   },
   data() {
     return {
@@ -36,7 +39,7 @@ export default {
         {
           id: 3,
           name: "Pixel Painter",
-          img: "../static/daf-home.png",
+          img: "../static/pp-home.png",
           description: "A description"
         },
         {

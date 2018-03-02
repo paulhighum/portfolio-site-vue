@@ -20,14 +20,14 @@ export default {
 
 @media screen and (max-width: 609px) {
   #Animation {
-    min-height: 80vmin;
+    min-height: 70vh;
     padding: 20vmin 0 0 0;
   }
 }
 
 @media screen and (min-width: 609px) {
   #Animation {
-    min-height: 60vmin;
+    min-height: 75vmin;
     padding: 8vmin 0 0 0;
   }
 }

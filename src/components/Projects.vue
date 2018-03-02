@@ -32,10 +32,11 @@ export default {
 .card {
   border: 2px solid rgb(48, 134, 213);
   border-radius: 5px;
+  background-color: rgb(48, 134, 213)
 }
 
 h2 {
-  color: rgb(48, 134, 213);
+  color: white;
   margin: 3px 0;
 }
 
@@ -44,18 +45,32 @@ h2 {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    padding: 8vmin 0;
   }
 
   .card {
-    background-color: white;
     min-width: 23vw;
     min-height: 23vw;
     margin: 0.25vw;
     padding: 0.25vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    transition: background-color 1s;
+  }
+
+  .card:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .card:hover h2 {
+    color: rgb(48, 134, 213);
   }
 
   h2 {
     font-size: 1.5rem;
+    transition: color 1s;
   }
 
   img {
