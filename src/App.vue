@@ -5,6 +5,7 @@
     <Projects :projects="projects"/>
     <Resume />
     <About />
+    <Contact />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Header from "./components/Header"
 import Projects from "./components/Projects"
 import Resume  from "./components/Resume"
 import About  from "./components/About"
+import Contact from "./components/Contact"
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     Projects,
     Resume,
     About,
+    Contact,
   },
   data() {
     return {
