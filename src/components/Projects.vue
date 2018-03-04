@@ -1,25 +1,12 @@
 <template>
   <div id="Projects">
-    <div class="card" v-for="project in projects" :key="project.id">
-      <h2>{{project.name}}</h2>
-      <img :src="project.img" alt="img">
+    <h2>Selected Projects:</h2>
+    <div class="project-cards">
+      <div class="project-card" v-for="project in projects" :key="project.id">
+        <h3>{{project.name}}</h3>
+        <img :src="project.img" alt="img">
+      </div>
     </div>
-    <!-- <div class="card">
-      <h2>Daily Animal Fact</h2>
-      <img src="../../static/daf-home.png" alt="animal"/>
-    </div>
-    <div class="card">
-      <h2>Planet Wager</h2>
-      <img src="" alt="">
-    </div>
-    <div class="card">
-      <h2>Pixel Painter</h2>
-      <img src="" alt="">
-    </div>
-    <div class="card">
-      <h2>Pixel Painter</h2>
-      <img src="" alt="">
-    </div> -->
   </div>
 </template>
 <script>
@@ -29,26 +16,36 @@ export default {
 }
 </script>
 <style scoped>
-.card {
+.project-card {
   border: 2px solid rgb(48, 134, 213);
   border-radius: 5px;
   background-color: rgb(48, 134, 213)
 }
 
 h2 {
+   color: rgb(48, 134, 213);
+   font-size: 1.75rem;
+   padding: 0 0 4vmin 0;
+}
+
+h3 {
   color: white;
   margin: 3px 0;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 749px) {
   #Projects {
+    padding: 8vmin 0 0 0;
+  }
+
+  .project-cards {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 8vmin 0;
   }
 
-  .card {
+  .project-card {
     min-width: 23vw;
     min-height: 23vw;
     margin: 0.25vw;
@@ -59,17 +56,16 @@ h2 {
     transition: background-color 1s;
   }
 
-  .card:hover {
+  .project-card:hover {
     background-color: white;
     cursor: pointer;
   }
 
-  .card:hover h2 {
+  .project-card:hover h3 {
     color: rgb(48, 134, 213);
   }
 
-  h2 {
-    font-size: 1.5rem;
+  h3 {
     transition: color 1s;
   }
 
@@ -80,20 +76,16 @@ h2 {
 }
 
 @media (min-width: 501px) and (max-width: 748px) {
-  #Projects {
+  .project-cards {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  .card {
+  .project-card {
     width: 46vmin;
     height: 46vmin;
     margin: 1vmin;
-  }
-
-  h2 {
-    font-size: 1.5rem;
   }
 
   img {
@@ -103,7 +95,7 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
-  .card {
+  .project-card {
     min-width: 48vmin;
     min-height: 48vmin;
     margin: 1vmin;
@@ -112,10 +104,6 @@ h2 {
   img {
     max-width: 60vmin;
     max-height: 60vmin;
-  }
-
-  h2 {
-    font-size: 1.5rem;
   }
 }
 </style>

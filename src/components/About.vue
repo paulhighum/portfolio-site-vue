@@ -39,7 +39,7 @@ export default {
 }
 
 h2 {
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   padding: 2vmin;
 }
 
