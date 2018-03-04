@@ -10,7 +10,6 @@
         </p>
         <br>
         <p>
-          I have seven siblings ranging in age from 31 to 8, which can make family events a little wild.
           By night I enjoy sleeping, by day I enjoy traveling, reading, writing, videogames, skiing, and eating.
         </p>
     </div>
