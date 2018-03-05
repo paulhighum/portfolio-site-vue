@@ -5,7 +5,7 @@
     <Projects :projects="projects"/>
     <Resume />
     <About />
-    <Contact />
+    <Contact :contactIcons="contactIcons"/>
   </div>
 </template>
 
@@ -53,6 +53,29 @@ export default {
           name: "Daily Animal Fact",
           img: "../static/daf-home.png",
           description: "A description"
+        }
+      ],
+      contactIcons: [
+        {
+          id: 1,
+          img: "../static/github.png",
+          link: "https://github.com/paulhighum",
+          description: "GitHub"
+        },{
+          id: 2,
+          img: "../static/linkedin.png",
+          link: "https://www.linkedin.com/in/paul-highum/",
+          description: "LinkedIn"
+        },{
+          id: 3,
+          img: "",
+          link: "",
+          description: "BuiltIn"
+        },{
+          id: 4,
+          img: "",
+          link: "",
+          description: "gTalent"
         }
       ]
     }

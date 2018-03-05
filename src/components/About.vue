@@ -3,11 +3,11 @@
     <div class="about-style">
       <h2>About</h2>
       <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning about new technologies, pairing on code, and participating in hackathons.
-          As a student at Galvanize I developed skills on both the frontend and backend, and have an interest in working in either area. I have learned a couple of languages and frameworks and would be eager to pick up new ones.
+          I have devloped skills on both the frontend and the backend, and have an interest in working in either area.
         </p>
         <br>
         <p>
-          By night I enjoy sleeping, by day I enjoy traveling, reading, writing, videogames, skiing, and eating.
+          I have lived in Denver most of my life, apart from a brief sojourn in LA for college. By night I enjoy sleeping, by day I enjoy traveling, reading, writing, videogames, skiing, and eating.
         </p>
     </div>
   </div>
@@ -37,7 +37,7 @@ export default {
 
 h2 {
   font-size: 1.75rem;
-  padding: 2vmin;
+  padding: 0 0 2vmin 0;
 }
 
 </style>

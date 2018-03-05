@@ -9,11 +9,18 @@
       <label>Message:</label>
       <textarea type="text" name="name" v-model="emailObject.message" rows="8" cols="100"/>
     </form>
+    <div class="contact-icons">
+      <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id">
+        <a :href="contactIcon.link"><img :src="contactIcon.img" alt="img"/></a>
+        <p>{{contactIcon.description}}</p>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: "Contact",
+  props: ["contactIcons"],
   data() {
     return {
       emailObject: {
@@ -64,6 +71,11 @@ input, textarea {
   outline: none !important;
   background-color: white;
   color: rgb(125, 173, 217);
+}
+
+.contact-icons img{
+  width: 64px;
+  height: 64px;
 }
 
 </style>
