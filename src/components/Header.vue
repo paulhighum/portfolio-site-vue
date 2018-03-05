@@ -39,7 +39,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(48, 134, 213);
+  background-color: rgb(125, 173, 217);
   color: white;
   height: 20vmin;
   position: fixed;
@@ -81,7 +81,7 @@ a {
   }
 
   #desktop-nav a:hover {
-    color: rgb(48, 134, 213);
+    color: rgb(125, 173, 217);
     background-color: white;
   }
 
@@ -125,7 +125,7 @@ a {
     margin-top: 4vmin;
     flex-flow: column nowrap;
     position: relative;
-    background-color: rgba(48, 134, 213, .7);
+    background-color: rgba(125, 173, 217, .7);
     transition: render 2s;
   }
 

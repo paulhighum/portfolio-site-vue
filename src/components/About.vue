@@ -1,7 +1,7 @@
 <template>
   <div id="About">
     <div class="about-style">
-      <h2>About:</h2>
+      <h2>About</h2>
       <p> Hey guys, I'm Paul.
           I was born in Marin County California, but then I moved to Denver when I was three months old.
           I lived in Denver until attending UCLA, where I graduated with a history degree.
@@ -31,11 +31,11 @@ export default {
 }
 
 .about-style {
-  width: 70vw;
+  width: 90vmin;
   padding: 2vmin;
-  border: 2px solid rgb(48, 134, 213);
+  border: 2px solid rgb(125, 173, 217);
   border-radius: 5px;
-  background-color: rgb(48, 134, 213)
+  background-color: rgb(125, 173, 217)
 }
 
 h2 {

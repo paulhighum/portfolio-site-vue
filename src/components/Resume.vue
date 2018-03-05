@@ -11,7 +11,7 @@ export default {
 <style scoped>
 #Resume {
   min-height: 70vh;
-  background-color: rgb(157, 210, 153);
+  background-color: white;
   padding: 8vmin 0 0 0;
 }
 

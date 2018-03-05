@@ -12,7 +12,6 @@ export default {
 
 <style lang="css">
 #Animation {
-  background-color: rgb(157, 210, 153);
   display: flex;
   align-items: center;
   justify-content: center;
