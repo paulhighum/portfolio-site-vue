@@ -2,11 +2,8 @@
   <div id="About">
     <div class="about-style">
       <h2>About</h2>
-      <p> Hey guys, I'm Paul.
-          I was born in Marin County California, but then I moved to Denver when I was three months old.
-          I lived in Denver until attending UCLA, where I graduated with a history degree.
-          After that I moved home with the intention of finishing my novel, but instead I quickly became an embarassing, basement-living, computer-gaming cliche.
-          So I got a job at DISH and took the intro to JS night course here.
+      <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning about new technologies, pairing on code, and participating in hackathons.
+          As a student at Galvanize I developed skills on both the frontend and backend, and have an interest in working in either area. I have learned a couple of languages and frameworks and would be eager to pick up new ones.
         </p>
         <br>
         <p>
