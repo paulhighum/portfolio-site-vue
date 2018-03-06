@@ -70,11 +70,6 @@ export default {
           id: 3,
           img: "",
           link: "",
-          description: "BuiltIn"
-        },{
-          id: 4,
-          img: "",
-          link: "",
           description: "gTalent"
         }
       ]
