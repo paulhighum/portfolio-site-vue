@@ -34,25 +34,34 @@ export default {
           id: 1,
           name: "Daily Animal Fact",
           img: "../static/daf-home.png",
-          description: "A description"
-        },
-        {
+          description: "This is a Vue web app that displays random animals facts. Users can generate new ones, add comments, and theoretically make a donation.",
+          github: "https://github.com/paulhighum/Daily-Animal-Fact-Frontend",
+          live: "https://daily-animal-fact.firebaseapp.com/",
+          technologies: ["Vue.js", "JavaScript", "HTML"," CSS", "Stripe", "Node.js", "Express.js", "PostgreSQL", "Knex.js"],
+        },{
           id: 2,
           name: "Planet Wager",
           img: "../static/pw-home.png",
-          description: "A description"
-        },
-        {
+          description: "A description",
+          github: "",
+          live: "",
+          technologies: [],
+        },{
           id: 3,
+          name: "WEREdar",
+          img: "../static/daf-home.png",
+          description: "A description",
+          github: "",
+          live: "",
+          technologies: [],
+        },{
+          id: 4,
           name: "Pixel Painter",
           img: "../static/pp-home.png",
-          description: "A description"
-        },
-        {
-          id: 4,
-          name: "Daily Animal Fact",
-          img: "../static/daf-home.png",
-          description: "A description"
+          description: "A description",
+          github: "",
+          live: "",
+          technologies: [],
         }
       ],
       contactIcons: [
