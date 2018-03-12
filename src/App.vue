@@ -68,8 +68,8 @@ export default {
           description: "LinkedIn"
         },{
           id: 3,
-          img: "",
-          link: "",
+          img: "../static/galvanize.png",
+          link: "https://talent.galvanize.com/students/1835",
           description: "gTalent"
         }
       ]

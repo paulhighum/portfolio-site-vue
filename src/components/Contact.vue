@@ -73,9 +73,29 @@ input, textarea {
   color: rgb(125, 173, 217);
 }
 
+.contact-icons {
+  display: flex;
+  flex-flow: row;
+  padding-top: 2vmin;
+}
+
 .contact-icons img{
   width: 64px;
   height: 64px;
+}
+
+.contact-icon {
+  padding: 2vmin;
+}
+
+.contact-icon p {
+  opacity: 0;
+  transition: opacity 1s;
+  padding-top: 1vmin;
+}
+
+.contact-icon:hover p{
+  opacity: 1;
 }
 
 </style>
