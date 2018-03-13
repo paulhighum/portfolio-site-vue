@@ -16,8 +16,11 @@
           </div>
           <div class="modal-body-style">
             <img :src="currentProject.img" alt="img">
-            <p>{{currentProject.description}}</p>
-            <p>Technologies: {{currentProject.technologies}}</p>
+            <div class="modal-body-paragraphs">
+              <p>{{currentProject.description}}</p>
+              <br>
+              <p>Technologies: {{currentProject.technologies}}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -86,10 +89,11 @@ h3 {
 
 .project-modal {
   background-color: rgb(254, 254, 254);
-  margin: 40vmin auto;
+  margin: 30vmin auto;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
-  width: 80%;
+  width: 65%;
+  height: 60%;
   font-size: 1.5rem;
 }
 
@@ -120,6 +124,17 @@ h3 {
     cursor: pointer;
 }
 
+.modal-body-style {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.modal-body-style img {
+  /* max-height: 60vh;
+  /* min-width: 26vw; */ 
+}
 
 @media screen and (min-width: 749px) {
   #Projects {
