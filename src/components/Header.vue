@@ -74,8 +74,7 @@ a {
   }
 
   #desktop-nav a {
-    transition: color 1s;
-    transition: background-color 1s;
+    transition: background-color .7s;
     padding: 3px;
     border-radius: 5px;
   }

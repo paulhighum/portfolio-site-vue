@@ -32,7 +32,7 @@ export default {
       projects: [
         {
           id: 1,
-          name: "Daily Animal Fact",
+          name: "Daily Animal Dose",
           img: "../static/daf-home.png",
           description: "This is a Vue web app that displays random animals facts. Users can generate new ones, add comments, and theoretically make a donation.",
           github: "https://github.com/paulhighum/Daily-Animal-Fact-Frontend",
