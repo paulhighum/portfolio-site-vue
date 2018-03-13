@@ -1,12 +1,13 @@
 <template>
   <div id="Contact">
-    <h2>Send me a Message</h2>
+    <h2>Send Me A Message</h2>
+    <img src="../../static/line-break.png" alt="line break" class="section-title-break">
     <form class="email-form" action="index.html" method="post">
-      <label>Name:</label>
+      <label>Name</label>
       <input type="text" name="name" v-model="emailObject.name" />
-      <label>Email:</label>
+      <label>Email</label>
       <input type="text" name="name" v-model="emailObject.email" />
-      <label>Message:</label>
+      <label>Message</label>
       <textarea type="text" name="name" v-model="emailObject.message" rows="8" cols="100"/>
     </form>
     <div class="contact-icons">
@@ -43,12 +44,20 @@ export default {
   flex-flow: column;
   align-items: center;
   font-size: 1.3rem;
-  color: rgb(125, 173, 217);
+  color: black;
   padding: 8vmin;
 }
 
 h2 {
-  font-size: 1.75rem;
+   color: black;
+   font-size: 1.75rem;
+   padding: 1vmin 0 0 0;
+}
+
+.section-title-break {
+  min-width: 44vmin;
+  max-width: 44vmin;
+  padding: 0 0 1vmin 0;
 }
 
 .email-form {
@@ -62,15 +71,19 @@ label {
   padding: 1vmin 0;
 }
 
+.label-break {
+  max-width: 30vmin;
+}
+
 input, textarea {
   width: 90vmin;
   padding: 2vmin;
   font-size: 1.3rem;
-  border: 2px solid rgb(125, 173, 217);
+  border: 2px solid black;
   border-radius: 5px;
   outline: none !important;
   background-color: white;
-  color: rgb(125, 173, 217);
+  color: black;
 }
 
 .contact-icons {

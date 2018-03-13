@@ -1,7 +1,8 @@
 <template>
   <div id="About">
+    <h2>About Me</h2>
+    <img src="../../static/line-break.png" alt="line break" class="section-title-break">
     <div class="about-style">
-      <h2>About</h2>
       <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning about new technologies, pairing on code, and participating in hackathons.
           I have devloped skills on both the frontend and the backend, and have an interest in working in either area.
         </p>
@@ -21,7 +22,9 @@ export default {
 #About {
   width: 100vw;
   display: flex;
+  flex-flow: column;
   justify-content: center;
+  align-items: center;
   padding: 8vmin 0;
   color: white;
   font-size: 1.3rem;
@@ -36,8 +39,15 @@ export default {
 }
 
 h2 {
-  font-size: 1.75rem;
-  padding: 0 0 2vmin 0;
+   color: black;
+   font-size: 1.75rem;
+   padding: 1vmin 0 0 0;
+}
+
+.section-title-break {
+  min-width: 44vmin;
+  max-width: 44vmin;
+  padding: 0 0 1vmin 0;
 }
 
 </style>
