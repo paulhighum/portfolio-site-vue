@@ -25,9 +25,9 @@
               <img src="../../static/line-break.png" alt="line break">
               <p>{{currentProject.technologies}}</p>
               <div class="modal-footer-style">
-                <button type="button" name="button">Live Site</button>
-                <button type="button" name="button">GitHub Repo</button>
-                <button type="button" name="button" @click="exitModal">Exit</button>
+                <button type="button" name="button" @click="visitLive" >Live Site</button>
+                <button type="button" name="button" @click="visitGitHub" >GitHub Repo</button>
+                <button type="button" name="button" @click="exitModal" >Exit</button>
               </div>
             </div>
           </div>
@@ -55,6 +55,12 @@ export default {
     },
     exitModal() {
       this.projectClick = false
+    },
+    visitLive(){
+      window.location.href = this.currentProject.live
+    },
+    visitGitHub(){
+      window.location.href = this.currentProject.github
     }
   }
 }
