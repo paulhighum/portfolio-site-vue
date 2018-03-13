@@ -2,7 +2,7 @@
   <div id="Header">
     <h1>Paul Highum</h1>
     <div class="menu" id="mobile-nav">
-      <img src="../../static/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle"/>
+      <img src="../../static/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle" />
       <transition-group name="slide-fade" tag="ul">
           <li v-if="menuToggle" key="Projects"><a href="#Projects">Projects</a></li>
           <li v-if="menuToggle" key="Resume"><a href="#Resume">Resume</a></li>

@@ -7,13 +7,21 @@
         <img :src="project.img" alt="img">
       </div>
     </div>
-    <div class="modal" v-if="projectClick">
-      <div class="project-modal">
-        <p @click="exitModal" class="close">&times;</p>
-        <h3>{{currentProject.name}}</h3>
-        <img :src="currentProject.img" alt="img">
+    <transition name="modal-fade">
+      <div class="modal" v-if="projectClick">
+        <div class="project-modal">
+          <div class="modal-header-style">
+            <h3>{{currentProject.name}}</h3>
+            <p @click="exitModal" class="close">&times;</p>
+          </div>
+          <div class="modal-body-style">
+            <img :src="currentProject.img" alt="img">
+            <p>{{currentProject.description}}</p>
+            <p>Technologies: {{currentProject.technologies}}</p>
+          </div>
+        </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 <script>
@@ -58,6 +66,13 @@ h3 {
   font-size: 1.5rem;
 }
 
+.modal-fade-enter-active, .modal-fade-leave-active {
+  transition: opacity .65s;
+}
+.modal-fade-enter, .modal-fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
 .modal {
     display: block;
     position: fixed;
@@ -80,6 +95,13 @@ h3 {
 
 .project-modal h3 {
   color: black;
+  padding: 10px;
+}
+
+.modal-header-style {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 .close {
