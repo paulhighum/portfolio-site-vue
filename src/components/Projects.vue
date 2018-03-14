@@ -109,6 +109,7 @@ h2 {
   width: 90vmin;
   height: 75%;
   font-size: 1.5rem;
+  padding: 1vmin;
 }
 
 .project-modal h4 {
@@ -140,6 +141,10 @@ h2 {
   max-height: 60vmin;
   max-width: 42vmin;
   align-self: center;
+}
+
+.modal-body-img {
+  padding: 0 0 0 2vmin;
 }
 
 .modal-body-style h5 {
