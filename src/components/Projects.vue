@@ -9,10 +9,10 @@
       <div class="modal" v-if="projectClick" >
         <div class="project-modal">
           <div class="modal-header-style">
-            <img :src="currentProject.logo" alt="logo">
+            <img :src="currentProject.logo" alt="logo" class="modal-logo">
           </div>
           <div class="modal-body-style">
-            <img :src="currentProject.img" alt="img">
+            <img :src="currentProject.img" alt="img" class="modal-body-img">
             <div class="modal-body-paragraphs">
               <h5>Description</h5>
               <img src="../../static/line-break.png" alt="line break">
@@ -251,12 +251,8 @@ h2 {
   }
 
   .modal-header-style img {
-    max-width: 42vmin;
+    max-width: 80vmin;
     max-height: 20vh;
-  }
-
-  .modal-header-style img {
-    min-width: 80vmin
   }
 
   .modal-body-style {
@@ -268,8 +264,12 @@ h2 {
   }
 
   .modal-body-style img{
-    max-height: 80vmin;
+    max-height: 100vmin;
     min-width: 64vmin;
+  }
+
+  .modal-body-img {
+    padding: 2vmin 0 0 0;
   }
 
   .modal-footer-style button{
