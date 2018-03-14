@@ -9,8 +9,7 @@
       <div class="modal" v-if="projectClick" >
         <div class="project-modal">
           <div class="modal-header-style">
-            <h4>{{currentProject.name}}</h4>
-            <img src="../../static/line-break.png" alt="line break">
+            <img :src="currentProject.logo" alt="logo">
           </div>
           <div class="modal-body-style">
             <img :src="currentProject.img" alt="img">
@@ -126,7 +125,8 @@ h2 {
 }
 
 .modal-header-style img {
-  max-width: 42vmin
+  max-width: 42vmin;
+  max-height: 10vh;
 }
 
 .modal-body-style {
@@ -248,6 +248,11 @@ h2 {
 
   .project-logo:nth-child(2) {
     padding: 4vh 0;
+  }
+
+  .modal-header-style img {
+    max-width: 42vmin;
+    max-height: 20vh;
   }
 
   .modal-header-style img {
