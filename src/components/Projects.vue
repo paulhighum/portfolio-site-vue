@@ -3,9 +3,7 @@
     <h2>Selected Projects</h2>
     <img src="../../static/line-break.png" alt="line break" class="section-title-break">
     <div class="project-logos">
-      <div class="project logo" v-for="project in projects" :key="project.id" :id="project.id" @click="openModal">
-        <img :src="project.logo" alt="logo">
-      </div>
+      <img class="project-logo" v-for="project in projects" :key="project.id" :id="project.id" @click="openModal" :src="project.logo" alt="logo">
     </div>
     <transition name="modal-fade">
       <div class="modal" v-if="projectClick" >
@@ -73,13 +71,17 @@ h2 {
 }
 
 .section-title-break {
-  min-width: 44vmin;
+  max-width: 44vmin;
 }
 
-h3 {
-  color: white;
-  margin: 3px 0;
-  font-size: 1.65rem;
+.project-logo {
+  min-width: 40vw;
+  padding: 2vmin 4vw;
+  cursor: pointer;
+}
+
+.project-logo:nth-child(2) {
+  padding: 0 4vw;
 }
 
 .modal-fade-enter-active, .modal-fade-leave-active {
@@ -124,7 +126,7 @@ h3 {
 }
 
 .modal-header-style img {
-  min-width: 42vmin
+  max-width: 42vmin
 }
 
 .modal-body-style {
@@ -136,7 +138,7 @@ h3 {
 
 .modal-body-style img {
   max-height: 60vmin;
-  min-width: 42vmin;
+  max-width: 42vmin;
   align-self: center;
 }
 
@@ -170,25 +172,40 @@ h3 {
   background-color: white;
 }
 
+@media screen and (min-width: 1150px){
+  .project-logo {
+    min-width: 35vw;
+  }
+}
+
 @media screen and (min-width: 749px) {
   #Projects {
     padding: 8vmin 0 0 0;
-  }
-
-  h3 {
-    transition: color 1s;
   }
 
   img {
     max-width: 20vw;
     max-height: 20vw;
   }
+
 }
 
 @media (min-width: 501px) and (max-width: 748px) {
   img {
-    max-width: 40vmin;
-    max-height: 40vmin;
+    max-width: 60vmin;
+    max-height: 60vmin;
+  }
+
+  .section-title-break {
+    min-width: 60vmin;
+  }
+
+  .project-logo {
+    padding: 4vh 0;
+  }
+
+  .project-logo:nth-child(2) {
+    padding: 4vh 0;
   }
 
   .modal-body-style {
@@ -217,6 +234,14 @@ h3 {
 
   .section-title-break {
     min-width: 80vmin;
+  }
+
+  .project-logo {
+    padding: 4vh 0;
+  }
+
+  .project-logo:nth-child(2) {
+    padding: 4vh 0;
   }
 
   .modal-header-style img {
