@@ -108,11 +108,11 @@ h3 {
 
 .project-modal {
   background-color: rgb(254, 254, 254);
-  margin: 25vmin auto;
+  margin: 20vmin auto;
   border: 1px solid rgb(136, 136, 136);
   border-radius: 5px;
   width: 90vmin;
-  height: 70%;
+  height: 75%;
   font-size: 1.5rem;
 }
 
@@ -234,6 +234,23 @@ h3 {
     max-width: 40vmin;
     max-height: 40vmin;
   }
+
+  .modal-body-style {
+    display: flex;
+    flex-flow: column;
+    overflow: scroll;
+  }
+
+  .modal-footer-style button{
+    height: 4.5vw;
+    width: 14vw;
+    background-color: rgb(125, 173, 217);
+    border-radius: 5px;
+    border: 1px solid rgb(125, 173, 217);
+    font-size: .85rem;
+    color: white;
+    outline: none !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -279,6 +296,24 @@ h3 {
     color: white;
     outline: none !important;
   }
+}
 
+@media (min-width: 700px) and (max-height: 690px) {
+  .modal-body-style {
+    display: flex;
+    flex-flow: column;
+    overflow: scroll;
+  }
+
+  .modal-footer-style button{
+    height: 4.5vw;
+    width: 14vw;
+    background-color: rgb(125, 173, 217);
+    border-radius: 5px;
+    border: 1px solid rgb(125, 173, 217);
+    font-size: .85rem;
+    color: white;
+    outline: none !important;
+  }
 }
 </style>
