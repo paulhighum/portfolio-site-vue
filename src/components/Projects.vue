@@ -248,6 +248,10 @@ h3 {
     max-height: 60vmin;
   }
 
+  .modal-header-style img {
+    min-width: 80vmin
+  }
+
   .modal-body-style {
     display: flex;
     flex-flow: column;
