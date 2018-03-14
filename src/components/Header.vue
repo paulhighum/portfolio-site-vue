@@ -4,18 +4,18 @@
     <div class="menu" id="mobile-nav">
       <img src="../../static/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle" />
       <transition-group name="slide-fade" tag="ul">
-          <li v-if="menuToggle" key="Projects"><a href="#Projects">Projects</a></li>
-          <li v-if="menuToggle" key="Resume"><a href="#Resume">Resume</a></li>
-          <li v-if="menuToggle" key="About"><a href="#About">About</a></li>
-          <li v-if="menuToggle" key="Contact"><a href="#Contact">Contact</a></li>
+          <li v-if="menuToggle" key="Projects"><a href="#Projects" v-smooth-scroll>Projects</a></li>
+          <li v-if="menuToggle" key="Resume"><a href="#Resume" v-smooth-scroll>Resume</a></li>
+          <li v-if="menuToggle" key="About"><a href="#About" v-smooth-scroll>About</a></li>
+          <li v-if="menuToggle" key="Contact"><a href="#Contact" v-smooth-scroll>Contact</a></li>
       </transition-group>
     </div>
     <div class="menu" id="desktop-nav">
       <ul>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Resume">Resume</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#Projects" v-smooth-scroll>Projects</a></li>
+        <li><a href="#Resume" v-smooth-scroll>Resume</a></li>
+        <li><a href="#About" v-smooth-scroll>About</a></li>
+        <li><a href="#Contact" v-smooth-scroll>Contact</a></li>
       </ul>
     </div>
   </div>

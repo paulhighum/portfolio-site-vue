@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <Header />
-    <Animation />
-    <Projects :projects="projects"/>
-    <Resume />
-    <About />
-    <Contact :contactIcons="contactIcons"/>
+    <main>
+      <Animation />
+      <Projects :projects="projects"/>
+      <Resume />
+      <About />
+      <Contact :contactIcons="contactIcons"/>
+    </main>
   </div>
 </template>
 
