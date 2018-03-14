@@ -18,10 +18,10 @@
           <div class="modal-body-style">
             <img :src="currentProject.img" alt="img">
             <div class="modal-body-paragraphs">
-              <h5>Description:</h5>
+              <h5>Description</h5>
               <img src="../../static/line-break.png" alt="line break">
               <p>{{currentProject.description}}</p>
-              <h5>Technologies:</h5>
+              <h5>Technologies</h5>
               <img src="../../static/line-break.png" alt="line break">
               <p>{{currentProject.technologies}}</p>
               <div class="modal-footer-style">
