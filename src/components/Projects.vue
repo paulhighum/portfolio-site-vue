@@ -9,7 +9,7 @@
       </div>
     </div>
     <transition name="modal-fade">
-      <div class="modal" v-if="projectClick">
+      <div class="modal" v-if="projectClick" >
         <div class="project-modal">
           <div class="modal-header-style">
             <h4>{{currentProject.name}}</h4>
