@@ -7,7 +7,7 @@
           <li v-if="menuToggle" key="Projects"><a href="#Projects">Projects</a></li>
           <li v-if="menuToggle" key="Resume"><a href="#Resume">Resume</a></li>
           <li v-if="menuToggle" key="About"><a href="#About">About</a></li>
-          <li v-if="menuToggle" key="Contact"><a hre="#Contact">Contact</a></li>
+          <li v-if="menuToggle" key="Contact"><a href="#Contact">Contact</a></li>
       </transition-group>
     </div>
     <div class="menu" id="desktop-nav">

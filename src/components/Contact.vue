@@ -111,6 +111,12 @@ input, textarea {
   opacity: 1;
 }
 
+@media screen and (max-width: 610px) {
+  #Contact {
+    padding: 20vmin 0 0 0;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .section-title-break {
     min-width: 80vmin;

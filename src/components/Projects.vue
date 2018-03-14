@@ -190,6 +190,12 @@ h2 {
 
 }
 
+@media screen and (max-width: 610px) {
+  #Projects {
+    padding: 20vmin 0 0 0;
+  }
+}
+
 @media (min-width: 501px) and (max-width: 748px) {
   img {
     max-width: 60vmin;
