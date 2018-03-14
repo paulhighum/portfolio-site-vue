@@ -248,6 +248,10 @@ h3 {
     max-height: 60vmin;
   }
 
+  .section-title-break {
+    min-width: 80vmin;
+  }
+
   .modal-header-style img {
     min-width: 80vmin
   }

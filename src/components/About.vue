@@ -50,4 +50,10 @@ h2 {
   padding: 0 0 1vmin 0;
 }
 
+@media screen and (max-width: 500px) {
+  .section-title-break {
+    min-width: 80vmin;
+  }
+}
+
 </style>
