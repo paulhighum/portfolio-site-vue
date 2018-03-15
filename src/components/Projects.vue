@@ -202,6 +202,10 @@ h2 {
 }
 
 @media (min-width: 501px) and (max-width: 748px) {
+  #Projects {
+    padding: 8vmin 0 0 0;
+  }
+
   img {
     max-width: 60vmin;
     max-height: 60vmin;
