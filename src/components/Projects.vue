@@ -144,7 +144,7 @@ h2 {
 }
 
 .modal-body-img {
-  padding: 0 0 0 2vmin;
+  padding: 2vmin 0 0 2vmin;
 }
 
 .modal-body-style h5 {
@@ -156,7 +156,7 @@ h2 {
 }
 
 .modal-footer-style {
-  padding: 5vmin 0 2vmin 0;
+  padding: 3vmin 0 2vmin 0;
 }
 
 .modal-footer-style button{
@@ -289,7 +289,7 @@ h2 {
   }
 }
 
-@media (min-width: 700px) and (max-height: 690px) {
+@media (min-width: 700px) and (max-height: 699px) {
   .modal-body-style {
     display: flex;
     flex-flow: column;
@@ -298,13 +298,14 @@ h2 {
 
   .modal-footer-style button{
     height: 4.5vw;
-    width: 14vw;
+    width: 12vw;
     background-color: rgb(125, 173, 217);
     border-radius: 5px;
     border: 1px solid rgb(125, 173, 217);
     font-size: .85rem;
     color: white;
     outline: none !important;
+    margin: 1vmin;
   }
 }
 </style>
