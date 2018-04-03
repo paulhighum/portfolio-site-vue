@@ -124,7 +124,7 @@ a {
     margin-top: 4vmin;
     flex-flow: column nowrap;
     position: relative;
-    background-color: rgba(125, 173, 217, .7);
+    background-color: rgba(2, 119, 165, .7);
     transition: render 2s;
   }
 

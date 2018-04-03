@@ -105,8 +105,8 @@ li:before{
 
 button {
   color: white;
-  background-color: rgb(125, 173, 217);
-  border-color: rgb(125, 173, 217);
+  background-color: #0277A5;
+  border-color: #0277A5;
   border-radius: 5px;
   margin: 4vh 5px;
   outline: none !important;
@@ -120,7 +120,7 @@ button {
 
 button:hover {
   background-color: white;
-  color: rgb(125, 173, 217);
+  color: #014675;
 }
 
 @media screen and (max-width: 748px) {

@@ -162,9 +162,9 @@ h2 {
 .modal-footer-style button{
   height: 4.5vmin;
   width: 14vmin;
-  background-color: rgb(125, 173, 217);
+  background-color: #0277A5;
   border-radius: 5px;
-  border: 1px solid rgb(125, 173, 217);
+  border: 1px solid #0277A5;
   font-size: .85rem;
   color: white;
   cursor: pointer;
@@ -173,7 +173,7 @@ h2 {
 }
 
 .modal-footer-style button:hover {
-  color: rgb(125, 173, 217);
+  color: #014675;
   background-color: white;
 }
 
@@ -232,9 +232,9 @@ h2 {
   .modal-footer-style button{
     height: 4.5vw;
     width: 14vw;
-    background-color: rgb(125, 173, 217);
+    background-color: #0277A5;
     border-radius: 5px;
-    border: 1px solid rgb(125, 173, 217);
+    border: 1px solid #0277A5;
     font-size: .85rem;
     color: white;
     outline: none !important;
@@ -284,9 +284,9 @@ h2 {
   .modal-footer-style button{
     height: 10vmin;
     width: 26vmin;
-    background-color: rgb(125, 173, 217);
+    background-color: #0277A5;
     border-radius: 5px;
-    border: 1px solid rgb(125, 173, 217);
+    border: 1px solid #0277A5;
     font-size: .85rem;
     color: white;
     outline: none !important;
@@ -303,9 +303,9 @@ h2 {
   .modal-footer-style button{
     height: 4.5vw;
     width: 12vw;
-    background-color: rgb(125, 173, 217);
+    background-color: #0277A5;
     border-radius: 5px;
-    border: 1px solid rgb(125, 173, 217);
+    border: 1px solid #0277A5;
     font-size: .85rem;
     color: white;
     outline: none !important;

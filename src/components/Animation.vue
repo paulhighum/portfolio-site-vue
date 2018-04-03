@@ -18,14 +18,17 @@ export default {
 }
 
 img {
-  min-height: 40vh;
+  height: 40vh;
+  min-width: 60vw;
 }
 
-@media screen and (max-width: 609px) {
+@media screen and (max-width: 608px) {
   #Animation {
     min-height: 70vh;
     padding: 20vmin 0 0 0;
   }
+
+
 }
 
 @media screen and (min-width: 609px) {

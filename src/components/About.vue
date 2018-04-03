@@ -33,9 +33,9 @@ export default {
 .about-style {
   width: 90vmin;
   padding: 2vmin;
-  border: 2px solid rgb(125, 173, 217);
+  border: 2px solid #0277A5;
   border-radius: 5px;
-  background-color: rgb(125, 173, 217)
+  background-color: #0277A5
 }
 
 h2 {
