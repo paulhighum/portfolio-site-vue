@@ -21,7 +21,8 @@
               <img src="../../static/line-break.png" alt="line break">
               <p>{{currentProject.technologies}}</p>
               <div class="modal-footer-style">
-                <button type="button" name="button" @click="visitLive" >Live Site</button>
+                <button type="button" name="button" v-if="currentProject.live" @click="visitLive" >Live Site</button>
+                <button type="button" name="button" v-else @click="visitDemo">View Demo</button>
                 <button type="button" name="button" @click="visitGitHub" >GitHub Repo</button>
                 <button type="button" name="button" @click="exitModal" >Exit</button>
               </div>
@@ -57,6 +58,9 @@ export default {
     },
     visitGitHub(){
       window.location.href = this.currentProject.github
+    },
+    visitDemo(){
+      window.location.href = this.currentProject.demo
     }
   }
 }

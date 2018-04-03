@@ -53,11 +53,11 @@ export default {
         },{
           id: 3,
           name: "Gift Genius",
-          img: "../static/pp-home.png",
+          img: "../static/gg-home.png",
           logo: "../static/ggwd.png",
           description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
           github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
-          live: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
+          demo: "https://photos.app.goo.gl/rGPUvalCj4kgPrS03",
           technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex, Node, Express",
         },{
           id: 4,
