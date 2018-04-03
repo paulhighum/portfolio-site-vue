@@ -179,7 +179,7 @@ h2 {
 
 @media screen and (min-width: 1150px){
   .project-logo {
-    min-width: 35vw;
+    min-width: 30vw;
   }
 }
 

@@ -39,7 +39,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(125, 173, 217);
+  background-color: #0277A5;
   color: white;
   height: 20vmin;
   position: fixed;
@@ -80,7 +80,7 @@ a {
   }
 
   #desktop-nav a:hover {
-    color: rgb(125, 173, 217);
+    color: #014675;
     background-color: white;
   }
 

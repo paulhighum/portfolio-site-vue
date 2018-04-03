@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="Animation">
-    <p>Temp for Animation</p>
+    <img src="../../static/Welcome.svg" alt="Welcome">
   </div>
 </template>
 
@@ -10,11 +10,15 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 #Animation {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+img {
+  min-height: 40vh;
 }
 
 @media screen and (max-width: 609px) {
@@ -26,7 +30,7 @@ export default {
 
 @media screen and (min-width: 609px) {
   #Animation {
-    min-height: 75vmin;
+    min-height: 75vh;
     padding: 8vmin 0 0 0;
   }
 }

@@ -46,28 +46,28 @@ export default {
           name: "Planet Wager",
           img: "../static/pw-home.png",
           logo: "../static/planet-wager-logo.png",
-          description: "Planet Wager! The betting app that allows you to bet with your friends and keep track of who's losing spacebucks and who is raking them in.",
+          description: "Planet Wager! The betting app that allows you to bet with your friends and keep track of who is losing spacebucks and who is raking them in.",
           github: "https://github.com/Space-Team/Space-Betting",
           live: "https://planetwager.herokuapp.com/main",
           technologies: "React, AntDesign React Component Library, JavaScript, HTML, CSS, Node.js, Express.js, Knex.js, PostgreSQL",
         },{
           id: 3,
+          name: "Gift Genius",
+          img: "../static/pp-home.png",
+          logo: "../static/ggwd.png",
+          description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
+          github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
+          live: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
+          technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex, Node, Express",
+        },{
+          id: 4,
           name: "WEREDAR",
           img: "../static/were-map.png",
           logo: "../static/were-logo-black.png",
-          description: "WEREDAR allows users to track werewolves in their area. The app includes a map with werewolf location pins, a lunar cycle tracker, and a form to report a sighting of a werewolf.",
+          description: "WEREDAR allows users to track werewolves in their area. The app includes a map with werewolf location pins, a lunar cycle tracker, and  a report-a-werewolf-sighting form",
           github: "https://github.com/paulhighum/WEREDAR",
           live: "https://weredar-1.firebaseapp.com/",
           technologies: "JavaScript, Leaflet, US Navy Lunar API, HTML, CSS",
-        },{
-          id: 4,
-          name: "Pixel Painter",
-          img: "../static/pp-home.png",
-          logo: "../static/pixel-painter-logo.png",
-          description: "Welcome to Pixel Painter, a classic pixel painting game! The only limit to what you paint is your imagination!",
-          github: "https://github.com/paulhighum/Pixel-Painter",
-          live: "https://pixel-art-pmh.firebaseapp.com/",
-          technologies: "JavaScript, HTML, CSS",
         }
       ],
       contactIcons: [
@@ -104,7 +104,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   min-height: 100vh;
   width: 100%;
 }
