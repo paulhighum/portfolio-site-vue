@@ -71,7 +71,7 @@ h2 {
 h3 {
   color: black;
   font-size: 1.3rem;
-  padding: 1vmin 0 0 0;
+  /* padding: 1vmin 0 0 0; */
 }
 
 .small-section-title-break {
@@ -137,6 +137,10 @@ button:hover {
 
   .resume-highlights {
     width: 80vw;
+  }
+
+  .resume-highlights h3 {
+    padding: 3vh 0 0 0;
   }
 
   button {
