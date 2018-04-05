@@ -114,7 +114,7 @@ button {
   font-size: 1rem;
   transition: background-color .7s;
   cursor: pointer;
-  height: 4.5vmin;
+  height: 7vmin;
   width: 30vmin;
 }
 

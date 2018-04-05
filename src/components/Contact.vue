@@ -2,13 +2,14 @@
   <div id="Contact">
     <h2>Send Me A Message</h2>
     <img src="../../static/line-break.png" alt="line break" class="section-title-break">
-    <form class="email-form" action="index.html" method="post">
+    <form class="email-form" action="index.html" method="post" @submit="sendEmail">
       <label>Name</label>
       <input type="text" name="name" v-model="emailObject.name" />
       <label>Email</label>
       <input type="text" name="name" v-model="emailObject.email" />
       <label>Message</label>
       <textarea type="text" name="name" v-model="emailObject.message" rows="8" cols="100"/>
+      <input class="submit" type="submit" name="submit" value="Send Message">
     </form>
     <div class="contact-icons">
       <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id">
@@ -33,7 +34,16 @@ export default {
   },
   methods: {
     sendEmail() {
-      console.log(this.emailObject, "sent")
+      event.preventDefault()
+      console.log(this.emailObject)
+      fetch("https://murmuring-retreat-91093.herokuapp.com/send/", {
+        method: "POST",
+        headers: new Headers({ "Content-Type": "application/json"}),
+        body: JSON.stringify(this.emailObject)
+      })
+      .then(res => res.json())
+      .then(res => console.log(res))
+      .catch(error => console.error("error:", error))
     }
   }
 }
@@ -86,6 +96,27 @@ input, textarea {
   color: black;
 }
 
+.submit {
+  color: white;
+  background-color: #0277A5;
+  border-color: #0277A5;
+  border-radius: 5px;
+  margin: 4vh 5px;
+  padding: 2vmin;
+  outline: none !important;
+  height: 4vh;
+  font-size: 1rem;
+  transition: background-color .7s;
+  cursor: pointer;
+  height: 7vmin;
+  width: 30vmin;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #014675;
+}
+
 .contact-icons {
   display: flex;
   flex-flow: row;
@@ -109,6 +140,14 @@ input, textarea {
 
 .contact-icon:hover p{
   opacity: 1;
+}
+
+@media screen and (max-width: 748px) {
+
+  .submit {
+    height: 8vh;
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 610px) {
