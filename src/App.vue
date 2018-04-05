@@ -37,7 +37,7 @@ export default {
           name: "Animal Dose",
           img: "../static/daf-home.png",
           logo: "../static/animal-dose-logo.png",
-          description: "This is a Vue web app that displays random animal facts. Users can generate new ones, add comments, and theoretically make a donation.",
+          description: "This is a Vue web app that displays random animal facts. Users can generate new facts, add comments, and make a donation.",
           github: "https://github.com/paulhighum/Daily-Animal-Fact-Frontend",
           live: "https://daily-animal-fact.firebaseapp.com/",
           technologies: "Vue.js, JavaScript, HTML, CSS, Stripe, Node.js, Express.js, PostgreSQL, Knex.js"
@@ -57,7 +57,7 @@ export default {
           logo: "../static/ggwd.png",
           description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
           github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
-          demo: "https://photos.app.goo.gl/hDe0u25cOnLkEE0U2", 
+          demo: "https://photos.app.goo.gl/hDe0u25cOnLkEE0U2",
           technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex, Node, Express",
         },{
           id: 4,
