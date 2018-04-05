@@ -48,7 +48,7 @@ export default {
 
 h1 {
   margin-left: 10px;
-  font-size: 2rem;
+  font-size: 2.75rem;
 }
 
 a {

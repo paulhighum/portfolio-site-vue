@@ -108,7 +108,7 @@ button {
   background-color: #0277A5;
   border-color: #0277A5;
   border-radius: 5px;
-  margin: 4vh 5px;
+  margin: 4vh 5px 0 5px;
   outline: none !important;
   height: 4vh;
   font-size: 1rem;
