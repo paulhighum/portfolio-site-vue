@@ -13,7 +13,7 @@
         <input class="submit" type="submit" name="submit" value="Send Message">
       </transition>
       <transition name="fade" v-else>
-        <p class="message-received" @click="messageReceived = !messageReceived">Message Sent!</p>
+        <p class="message-received" @click="messageReceived = !messageReceived">{{returnMessage}}</p>
       </transition>
     </form>
     <div class="contact-icons">
@@ -35,7 +35,8 @@ export default {
         email: "",
         message: "",
       },
-      messageReceived: false
+      messageReceived: false,
+      returnMessage: "Message Sent!"
     }
   },
   methods: {
@@ -50,10 +51,15 @@ export default {
       .then(res => res.json())
       .then(res => {
         this.messageReceived = !this.messageReceived
+        this.emailObject = {
+          name: "",
+          email: "",
+          message: "",
+        }
         return res
       })
       .catch(error => console.error("error:", error))
-    }
+    },
   }
 }
 </script>
@@ -155,10 +161,21 @@ input, textarea {
   padding: 2vh 2vw;
   margin: 4vh 5px 0 5px;
   background-color: #0277A5;
-  border-color: #0277A5;
+  border: 1px solid #0277A5;
   border-radius: 5px;
   color: white;
   cursor: pointer;
+}
+
+.message-received:hover {
+  background-color: white;
+  color: #014675;
+  border-color: #0277A5;
+  border-radius: 5px;
+}
+
+.message-received:hover p::after{
+  content: "Different";
 }
 
 .fade-enter-active {
