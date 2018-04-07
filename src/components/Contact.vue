@@ -9,7 +9,12 @@
       <input type="text" name="name" v-model="emailObject.email" />
       <label>Message</label>
       <textarea type="text" name="name" v-model="emailObject.message" rows="8" cols="100"/>
-      <input class="submit" type="submit" name="submit" value="Send Message">
+      <transition name="fade" v-if="!messageReceived">
+        <input class="submit" type="submit" name="submit" value="Send Message">
+      </transition>
+      <transition name="fade" v-else>
+        <p class="message-received" @click="messageReceived = !messageReceived">Message Sent!</p>
+      </transition>
     </form>
     <div class="contact-icons">
       <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id">
@@ -29,7 +34,8 @@ export default {
         name: "",
         email: "",
         message: "",
-      }
+      },
+      messageReceived: false
     }
   },
   methods: {
@@ -42,7 +48,10 @@ export default {
         body: JSON.stringify(this.emailObject)
       })
       .then(res => res.json())
-      .then(res => console.log(res))
+      .then(res => {
+        this.messageReceived = !this.messageReceived
+        return res
+      })
       .catch(error => console.error("error:", error))
     }
   }
@@ -142,6 +151,27 @@ input, textarea {
   opacity: 1;
 }
 
+.message-received {
+  padding: 2vh 2vw;
+  margin: 4vh 5px 0 5px;
+  background-color: #0277A5;
+  border-color: #0277A5;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.fade-enter-active {
+  transition: all .3s ease;
+}
+.fade-leave-active {
+  transition: all .1s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-enter, .fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
+  opacity: 0;
+}
 @media screen and (max-width: 748px) {
 
   .submit {
