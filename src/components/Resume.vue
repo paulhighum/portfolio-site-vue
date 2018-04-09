@@ -9,9 +9,10 @@
         <img src="../../static/line-break.png" alt="line break" class="small-section-title-break">
         <ul class="highlights-list">
           <li>Galvanize Web Development Immersive Grad</li>
-          <li>Technical Skills: HTML5, CSS3, JavaScript, React, Vue, Android Studio, and Kotlin</li>
+          <li>Technical Skill Highlights: HTML5, CSS3, JavaScript, React, Vue, Android Studio, and Kotlin</li>
           <li>Project Development Using Agile Methodologies</li>
           <li>Graduated Summa Cum Laude From UCLA In Three Years</li>
+          <li>Experience Working In A Fast Paced Professional Environment At DISH Network</li>
         </ul>
         <button type="button" name="button" @click="visitResume">View Resume PDF</button>
       </div>
@@ -32,7 +33,7 @@ export default {
 #Resume {
   min-height: 70vh;
   background-color: white;
-  padding: 8vmin 0 0 0;
+  padding: 10vmin 0 0 0;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -40,8 +41,9 @@ export default {
 
 h2 {
    color: black;
-   font-size: 1.75rem;
+   font-size: 2.25rem;
    padding: 1vmin 0 0 0;
+   font-weight: bold;
 }
 
 .section-title-break {
@@ -70,7 +72,8 @@ h2 {
 
 h3 {
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.85rem;
+  font-weight: bold;
   /* padding: 1vmin 0 0 0; */
 }
 
@@ -81,7 +84,7 @@ h3 {
 }
 
 ul  {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 li {
@@ -95,8 +98,8 @@ li {
 li:before{
    content: "";
    display: inline-block;
-   height: 18px;
-   width: 18px;
+   height: 16px;
+   width: 16px;
    background-image: url("../../static/line-break-bullet.png");
    background-size: cover;
    background-repeat: no-repeat;
@@ -111,11 +114,12 @@ button {
   margin: 4vh 5px 0 5px;
   outline: none !important;
   height: 4vh;
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: background-color .7s;
   cursor: pointer;
   height: 7vmin;
   width: 30vmin;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 button:hover {
@@ -158,6 +162,10 @@ button:hover {
 @media screen and (max-width: 500px) {
   .section-title-break {
     min-width: 80vmin;
+  }
+
+  .small-section-title-break {
+    min-width: 70vmin;
   }
 }
 

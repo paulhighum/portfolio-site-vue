@@ -69,8 +69,9 @@ export default {
 
 h2 {
    color: black;
-   font-size: 1.75rem;
+   font-size: 2.25rem;
    padding: 1vmin 0 0 0;
+   font-weight: bold;
 }
 
 .section-title-break {
@@ -188,9 +189,6 @@ h2 {
 }
 
 @media screen and (min-width: 749px) {
-  #Projects {
-    padding: 8vmin 0 0 0;
-  }
 
   img {
     max-width: 20vw;
@@ -199,16 +197,19 @@ h2 {
 
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 647px) {
   #Projects {
     padding: 20vmin 0 0 0;
   }
 }
 
-@media (min-width: 501px) and (max-width: 748px) {
+@media screen and (min-width: 648px) {
   #Projects {
-    padding: 8vmin 0 0 0;
+    padding: 10vmin 0 0 0;
   }
+}
+
+@media (min-width: 501px) and (max-width: 748px) {
 
   img {
     max-width: 60vmin;

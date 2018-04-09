@@ -48,18 +48,21 @@ export default {
 
 h1 {
   margin-left: 10px;
-  font-size: 2.75rem;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 2px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 648px) {
 
   #Header {
-    height: 8vmin;
+    height: 10vmin;
   }
 
   #desktop-nav ul {
@@ -70,7 +73,7 @@ a {
   #desktop-nav li {
     margin-right: 10px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.85rem;
   }
 
   #desktop-nav a {
@@ -89,7 +92,7 @@ a {
   }
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 647px) {
   #desktop-nav {
     display: none;
   }

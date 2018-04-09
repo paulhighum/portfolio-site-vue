@@ -25,7 +25,7 @@ export default {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 8vmin 0;
+  padding: 10vmin 0;
   color: white;
   font-size: 1.3rem;
 }
@@ -40,14 +40,19 @@ export default {
 
 h2 {
    color: black;
-   font-size: 1.75rem;
+   font-size: 2.25rem;
    padding: 1vmin 0 0 0;
+   font-weight: bold;
 }
 
 .section-title-break {
   min-width: 44vmin;
   max-width: 44vmin;
   padding: 0 0 1vmin 0;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 610px) {

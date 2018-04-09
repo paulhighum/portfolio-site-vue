@@ -70,13 +70,14 @@ export default {
   align-items: center;
   font-size: 1.3rem;
   color: black;
-  padding: 8vmin;
+  padding: 10vmin;
 }
 
 h2 {
    color: black;
-   font-size: 1.75rem;
+   font-size: 2.25rem;
    padding: 1vmin 0 0 0;
+   font-weight: bold;
 }
 
 .section-title-break {
@@ -94,6 +95,7 @@ h2 {
 
 label {
   padding: 1vmin 0;
+  font-size: 1.6rem;
 }
 
 .label-break {
@@ -117,14 +119,15 @@ input, textarea {
   border-color: #0277A5;
   border-radius: 5px;
   margin: 4vh 5px 0 5px;
-  padding: 2vmin;
+  padding: 1vmin;
   outline: none !important;
   height: 4vh;
-  font-size: 1rem;
+  font-size: 1.4rem;
   transition: background-color .7s;
   cursor: pointer;
   height: 7vmin;
   width: 30vmin;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .submit:hover {
@@ -151,6 +154,7 @@ input, textarea {
   opacity: 0;
   transition: opacity 1s;
   padding-top: 1vmin;
+  color: #014675;
 }
 
 .contact-icon:hover p{
@@ -165,6 +169,7 @@ input, textarea {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  font-size: 1.4rem;
 }
 
 .message-received:hover {
