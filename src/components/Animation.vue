@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="Animation">
-    <img src="../../static/Welcome.svg" alt="Welcome">
+    <img src="../../static/Welcome2_animated.svg" alt="Welcome">
   </div>
 </template>
 
@@ -18,8 +18,8 @@ export default {
 }
 
 img {
-  height: 40vh;
-  min-width: 60vw;
+  height: 60vh;
+  min-width: 100vw;
 }
 
 @media screen and (max-width: 608px) {
