@@ -6,7 +6,7 @@
       <img class="project-logo" v-for="project in projects" :key="project.id" :id="project.id" @click="openModal" :src="project.logo" alt="logo">
     </div>
     <transition name="modal-fade">
-      <div class="modal" v-if="projectClick" >
+      <div class="modal" v-if="projectClick" @click="exitModal">
         <div class="project-modal">
           <div class="modal-header-style">
             <img :src="currentProject.logo" alt="logo" class="modal-logo">
@@ -24,7 +24,7 @@
                 <button type="button" name="button" v-if="currentProject.live" @click="visitLive" >Live Site</button>
                 <button type="button" name="button" v-else @click="visitDemo">View Demo</button>
                 <button type="button" name="button" @click="visitGitHub" >GitHub Repo</button>
-                <button type="button" name="button" @click="exitModal" >Exit</button>
+                <button class="exit-button" type="button" name="button" @click="exitModal" >Exit</button>
               </div>
             </div>
           </div>
@@ -50,8 +50,12 @@ export default {
       })[0]
       this.projectClick = true
     },
-    exitModal() {
-      this.projectClick = false
+    exitModal(event) {
+      event.stopPropagation()
+      if(event.target.className === "exit-button" || event.target.className === "modal"){
+        this.projectClick = !this.projectClick
+      }
+
     },
     visitLive(){
       window.location.href = this.currentProject.live
