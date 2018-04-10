@@ -58,7 +58,7 @@ export default {
           description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
           github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
           demo: "https://photos.app.goo.gl/hDe0u25cOnLkEE0U2",
-          technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex, Node, Express",
+          technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex.js, Node.js, Express.js",
         },{
           id: 4,
           name: "WEREDAR",
