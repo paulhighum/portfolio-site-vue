@@ -12,7 +12,7 @@
           <li>Technical Skill Highlights: HTML5, CSS3, JavaScript, React, Vue, Android Studio, and Kotlin</li>
           <li>Project Development Using Agile Methodologies</li>
           <li>Graduated Summa Cum Laude From UCLA In Three Years</li>
-          <li>Experience Working In A Fast Paced Professional Environment At DISH Network</li>
+          <li>Experience Working In A Fast Paced Professional Environment At Dish Network</li>
         </ul>
         <button type="button" name="button" @click="visitResume">View Resume PDF</button>
       </div>
