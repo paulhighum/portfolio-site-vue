@@ -9,7 +9,7 @@
         <img src="../../static/line-break.png" alt="line break" class="small-section-title-break">
         <ul class="highlights-list">
           <li>Galvanize Web Development Immersive Grad</li>
-          <li>Technical Skill Highlights: HTML5, CSS3, JavaScript, React, Vue, Android Studio, and Kotlin</li>
+          <li>Technical Skill Highlights: HTML5, CSS3, JavaScript, React, Vue, Node.js, and PostgreSQL</li>
           <li>Project Development Using Agile Methodologies</li>
           <li>Graduated Summa Cum Laude From UCLA In Three Years</li>
           <li>Experience Working In A Fast Paced Professional Environment At Dish Network</li>
