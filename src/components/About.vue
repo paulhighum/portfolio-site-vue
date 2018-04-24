@@ -4,7 +4,7 @@
     <img src="../../static/line-break.png" alt="line break" class="section-title-break">
     <div class="about-style">
       <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning about new technologies, pairing on code, and participating in hackathons.
-          I have devloped skills on both the frontend and the backend, and have an interest in working in either area.
+          I have developed skills on both the frontend and the backend, and have an interest in working in either area.
         </p>
         <br>
         <p>
