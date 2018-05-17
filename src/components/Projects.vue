@@ -58,13 +58,13 @@ export default {
 
     },
     visitLive(){
-      window.location.href = this.currentProject.live
+      window.open(this.currentProject.live, '_blank')
     },
     visitGitHub(){
-      window.location.href = this.currentProject.github
+      window.open(this.currentProject.github, '_blank')
     },
     visitDemo(){
-      window.location.href = this.currentProject.demo
+      window.open(this.currentProject.demo, '_blank')
     }
   }
 }
