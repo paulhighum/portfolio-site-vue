@@ -24,7 +24,7 @@ export default {
   name: "Resume",
   methods: {
     visitResume() {
-      window.location.href = "https://drive.google.com/file/d/1KUi5CPUZkYYZxyXPq9E5MTH0igQiTNSz/view?usp=sharing"
+     window.open("https://drive.google.com/file/d/1KUi5CPUZkYYZxyXPq9E5MTH0igQiTNSz/view?usp=sharing", "_blank")
     }
   }
 }
