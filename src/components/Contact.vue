@@ -17,8 +17,8 @@
       </transition>
     </form>
     <div class="contact-icons">
-      <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id">
-        <a :href="contactIcon.link"><img :src="contactIcon.img" alt="img"/></a>
+      <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id" @click="visitSite(contactIcon.link)" >
+        <img :src="contactIcon.img" alt="img"/>
         <p>{{contactIcon.description}}</p>
       </div>
     </div>
@@ -60,6 +60,9 @@ export default {
       })
       .catch(error => console.error("error:", error))
     },
+    visitSite(link) {
+      window.open(link, "_blank")
+    }
   }
 }
 </script>
@@ -148,6 +151,7 @@ input, textarea {
 
 .contact-icon {
   padding: 2vmin;
+  cursor: pointer;
 }
 
 .contact-icon p {
