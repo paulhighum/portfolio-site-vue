@@ -3,8 +3,8 @@
     <h2>About Me</h2>
     <img src="../../static/line-break.png" alt="line break" class="section-title-break">
     <div class="about-style">
-      <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning about new technologies, pairing on code, and participating in hackathons.
-          I have developed skills on both the frontend and the backend, and have an interest in working in either area.
+      <p> I am a Full Stack Developer who gets a thrill from writing successful logic in any programming language. I enjoy learning new technologies, collaborating with my teammates, and mentoring Junior Developers.
+          I have curated skills in project management, in people management, and throughout the development lifecycle that I would be excited to bring to your team.
         </p>
         <br>
         <p>

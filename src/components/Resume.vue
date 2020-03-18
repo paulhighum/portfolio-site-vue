@@ -8,11 +8,11 @@
         <h3>Highlights</h3>
         <img src="../../static/line-break.png" alt="line break" class="small-section-title-break">
         <ul class="highlights-list">
-          <li>Galvanize Web Development Immersive Grad</li>
-          <li>Technical Skill Highlights: HTML5, CSS3, JavaScript, React, Vue, Node.js, and PostgreSQL</li>
+          <li>Experienced Full Stack Developer and Technical Lead</li>
+          <li>Technical Skill Highlights: JavaScript, React, Vue, Node.js, AWS, REST, GraphQL, and PostgreSQL</li>
           <li>Project Development Using Agile Methodologies</li>
           <li>Graduated Summa Cum Laude From UCLA In Three Years</li>
-          <li>Experience Working In A Fast Paced Professional Environment At Dish Network</li>
+          <li>Experience Working In A Fast Paced Startup Environment At RedZone Software</li>
         </ul>
         <button type="button" name="button" @click="visitResume">View Resume PDF</button>
       </div>
@@ -24,7 +24,7 @@ export default {
   name: "Resume",
   methods: {
     visitResume() {
-     window.open("https://drive.google.com/file/d/1KUi5CPUZkYYZxyXPq9E5MTH0igQiTNSz/view?usp=sharing", "_blank")
+     window.open("https://drive.google.com/file/d/1coIRk0mfSkkGwzjxoKXSMkQC5xlU8Lyt/view?usp=sharing", "_blank")
     }
   }
 }
@@ -55,6 +55,8 @@ h2 {
 #resume-png {
   max-width: 40vw;
   padding: 0 1vw 0 0;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .resume-container {
