@@ -1,7 +1,7 @@
 <template>
   <div id="Contact">
     <h2>Send Me A Message</h2>
-    <img src="../../static/line-break.png" alt="line break" class="section-title-break">
+    <img src="../assets/line-break.png" alt="line break" class="section-title-break">
     <form class="email-form" action="index.html" method="post" @submit="sendEmail">
       <label>Name</label>
       <input type="text" name="name" v-model="emailObject.name" />
@@ -27,7 +27,6 @@
 <script>
 export default {
   name: "Contact",
-  props: ["contactIcons"],
   data() {
     return {
       emailObject: {
@@ -36,7 +35,25 @@ export default {
         message: "",
       },
       messageReceived: false,
-      returnMessage: "Message Sent!"
+      returnMessage: "Message Sent!",
+      contactIcons: [
+        {
+          id: 1,
+          img: "/img/github.png",
+          link: "https://github.com/paulhighum",
+          description: "GitHub"
+        },{
+          id: 2,
+          img: "/img/linkedin.png",
+          link: "https://www.linkedin.com/in/paul-highum/",
+          description: "LinkedIn"
+        },{
+          id: 3,
+          img: "/img/galvanize.png",
+          link: "https://talent.galvanize.com/students/1835",
+          description: "gTalent"
+        }
+      ]
     }
   },
   methods: {

@@ -2,7 +2,7 @@
   <div id="Header">
     <h1>Paul Highum</h1>
     <div class="menu" id="mobile-nav">
-      <img src="../../static/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle" />
+      <img src="../assets/menu.png" alt="menu" v-on:click="menuToggle = !menuToggle" />
       <transition-group name="slide-fade" tag="ul">
           <li v-if="menuToggle" key="Projects"><a href="#Projects" @click="menuToggle = !menuToggle" v-smooth-scroll>Projects</a></li>
           <li v-if="menuToggle" key="Resume"><a href="#Resume" @click="menuToggle = !menuToggle" v-smooth-scroll>Resume</a></li>
@@ -23,6 +23,7 @@
 </template>
 
 <script>
+
 export default {
   name: "Header",
   props: [],
@@ -68,6 +69,7 @@ a {
   #desktop-nav ul {
     display: flex;
     flex-flow: row nowrap;
+    list-style-type: none;
   }
 
   #desktop-nav li {

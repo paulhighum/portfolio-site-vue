@@ -1,12 +1,12 @@
 <template>
   <div id="Resume">
     <h2>Resume</h2>
-    <img src="../../static/line-break.png" alt="line break" class="section-title-break">
+    <img src="../assets/line-break.png" alt="line break" class="section-title-break">
     <div class="resume-container">
-      <img id="resume-png" src="../../static/resume.png" alt="resume">
+      <img id="resume-png" src="../assets/resume.png" alt="resume">
       <div class="resume-highlights">
         <h3>Highlights</h3>
-        <img src="../../static/line-break.png" alt="line break" class="small-section-title-break">
+        <img src="../assets/line-break.png" alt="line break" class="small-section-title-break">
         <ul class="highlights-list">
           <li>Experienced Full Stack Developer and Technical Lead</li>
           <li>Technical Skill Highlights: JavaScript, React, Vue, Node.js, AWS, REST, GraphQL, and PostgreSQL</li>
@@ -102,7 +102,7 @@ li:before{
    display: inline-block;
    height: 16px;
    width: 16px;
-   background-image: url("../../static/line-break-bullet.png");
+   background-image: url("../assets/line-break-bullet.png");
    background-size: cover;
    background-repeat: no-repeat;
    margin-right: .5vw;

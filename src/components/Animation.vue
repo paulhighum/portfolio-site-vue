@@ -1,6 +1,6 @@
 <template lang="html">
   <div id="Animation">
-    <img src="../../static/Welcome2_animated.svg" alt="Welcome">
+    <img src="../assets/Welcome2_animated.svg" alt="Welcome">
   </div>
 </template>
 

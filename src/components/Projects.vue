@@ -1,24 +1,24 @@
 <template>
   <div id="Projects">
     <h2>Selected Projects</h2>
-    <img src="../../static/line-break.png" alt="line break" class="section-title-break">
+    <img src="../assets/line-break.png" alt="line break" class="section-title-break">
     <div class="project-logos">
-      <img class="project-logo" v-for="project in projects" :key="project.id" :id="project.id" @click="openModal" :src="project.logo" alt="logo">
+      <img class="project-logo" v-for="project in projects" :key="project.id" :id="project.id" @click="openModal" :src="`${publicPath}${project.logo}`" alt="logo">
     </div>
     <transition name="modal-fade">
       <div class="modal" v-if="projectClick" @click="exitModal">
         <div class="project-modal">
           <div class="modal-header-style">
-            <img :src="currentProject.logo" alt="logo" class="modal-logo">
+            <img :src="`${publicPath}${currentProject.logo}`" alt="logo" class="modal-logo">
           </div>
           <div class="modal-body-style">
-            <img :src="currentProject.img" alt="img" class="modal-body-img">
+            <img :src="`${publicPath}${currentProject.img}`" alt="img" class="modal-body-img">
             <div class="modal-body-paragraphs">
               <h5>Description</h5>
-              <img src="../../static/line-break.png" alt="line break">
+              <img src="../assets/line-break.png" alt="line break">
               <p>{{currentProject.description}}</p>
               <h5>Technologies</h5>
-              <img src="../../static/line-break.png" alt="line break">
+              <img src="../assets/line-break.png" alt="line break">
               <p>{{currentProject.technologies}}</p>
               <div class="modal-footer-style">
                 <button type="button" name="button" v-if="currentProject.live" @click="visitLive" >Live Site</button>
@@ -36,23 +36,62 @@
 <script>
 export default {
   name: "Projects",
-  props: ["projects"],
   data() {
     return {
       projectClick: false,
       currentProject: {},
+      publicPath: process.env.BASE_URL,
+      projects: [
+        {
+          id: 1,
+          name: "Animal Dose",
+          img: "daf-home.png",
+          logo: "animal-dose-logo.png",
+          description: "This is a Vue web app that displays random animal facts. Users can generate new facts, add comments, and make a donation.",
+          github: "https://github.com/paulhighum/Daily-Animal-Fact-Frontend",
+          live: "https://daily-animal-fact.firebaseapp.com/",
+          technologies: "Vue.js, JavaScript, HTML, CSS, Stripe, Node.js, Express.js, PostgreSQL, Knex.js"
+        },{
+          id: 2,
+          name: "Planet Wager",
+          img: "pw-home.png",
+          logo: "planet-wager-logo.png",
+          description: "Planet Wager! The betting app that allows you to bet with your friends and keep track of who is losing spacebucks and who is raking them in.",
+          github: "https://github.com/Space-Team/Space-Betting",
+          live: "https://planetwager.herokuapp.com/main",
+          technologies: "React, AntDesign React Component Library, JavaScript, HTML, CSS, Node.js, Express.js, Knex.js, PostgreSQL",
+        },{
+          id: 3,
+          name: "Gift Genius",
+          img: "gg-home.png",
+          logo: "ggwd.png",
+          description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
+          github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
+          demo: "https://photos.app.goo.gl/7B04Yr6K9kQblsWH2",
+          technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex.js, Node.js, Express.js",
+        },{
+          id: 4,
+          name: "WEREDAR",
+          img: "were-map.png",
+          logo: "were-logo-black.png",
+          description: "WEREDAR allows users to track werewolves in their area. The app includes a map with werewolf location pins, a lunar cycle tracker, and  a report-a-werewolf-sighting form",
+          github: "https://github.com/paulhighum/WEREDAR",
+          live: "https://weredar-1.firebaseapp.com/",
+          technologies: "JavaScript, Leaflet, US Navy Lunar API, HTML, CSS",
+        }
+      ]
     }
   },
   methods: {
-    openModal() {
+    openModal(e) {
       this.currentProject = this.projects.filter(project => {
-        return project.id === Number(event.target.id)
+        return project.id === Number(e.target.id)
       })[0]
       this.projectClick = true
     },
-    exitModal(event) {
-      event.stopPropagation()
-      if(event.target.className === "exit-button" || event.target.className === "modal"){
+    exitModal(e) {
+      e.stopPropagation()
+      if(e.target.className === "exit-button" || e.target.className === "modal"){
         this.projectClick = !this.projectClick
       }
 

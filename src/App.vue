@@ -1,94 +1,32 @@
 <template>
-  <div id="app">
-    <Header />
-    <main>
+  <Header />
+  <main>
       <Animation />
-      <Projects :projects="projects"/>
+      <Projects />
       <Resume />
       <About />
-      <Contact :contactIcons="contactIcons"/>
+      <Contact />
     </main>
-  </div>
 </template>
 
 <script>
-import Animation from "./components/Animation"
-import Header from "./components/Header"
-import Projects from "./components/Projects"
-import Resume  from "./components/Resume"
-import About  from "./components/About"
-import Contact from "./components/Contact"
+import Header from './components/Header.vue'
+import Animation from './components/Animation.vue'
+import Projects from './components/Projects.vue'
+import Resume  from './components/Resume.vue'
+import About from './components/About.vue'
+import Contact from './components/Contact.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Animation,
     Header,
+    Animation,
     Projects,
     Resume,
     About,
-    Contact,
-  },
-  data() {
-    return {
-      projects: [
-        {
-          id: 1,
-          name: "Animal Dose",
-          img: "../static/daf-home.png",
-          logo: "../static/animal-dose-logo.png",
-          description: "This is a Vue web app that displays random animal facts. Users can generate new facts, add comments, and make a donation.",
-          github: "https://github.com/paulhighum/Daily-Animal-Fact-Frontend",
-          live: "https://daily-animal-fact.firebaseapp.com/",
-          technologies: "Vue.js, JavaScript, HTML, CSS, Stripe, Node.js, Express.js, PostgreSQL, Knex.js"
-        },{
-          id: 2,
-          name: "Planet Wager",
-          img: "../static/pw-home.png",
-          logo: "../static/planet-wager-logo.png",
-          description: "Planet Wager! The betting app that allows you to bet with your friends and keep track of who is losing spacebucks and who is raking them in.",
-          github: "https://github.com/Space-Team/Space-Betting",
-          live: "https://planetwager.herokuapp.com/main",
-          technologies: "React, AntDesign React Component Library, JavaScript, HTML, CSS, Node.js, Express.js, Knex.js, PostgreSQL",
-        },{
-          id: 3,
-          name: "Gift Genius",
-          img: "../static/gg-home.png",
-          logo: "../static/ggwd.png",
-          description: "A Kotlin Android app that recommends gifts. Users select a number of filters in order to generate gift ideas for the relevant person and occasion.",
-          github: "https://github.com/paulhighum/Gift-Genius-Kotlin-Frontend",
-          demo: "https://photos.app.goo.gl/7B04Yr6K9kQblsWH2",
-          technologies: "Kotlin, Android Studio, XML, PostgreSQL, Knex.js, Node.js, Express.js",
-        },{
-          id: 4,
-          name: "WEREDAR",
-          img: "../static/were-map.png",
-          logo: "../static/were-logo-black.png",
-          description: "WEREDAR allows users to track werewolves in their area. The app includes a map with werewolf location pins, a lunar cycle tracker, and  a report-a-werewolf-sighting form",
-          github: "https://github.com/paulhighum/WEREDAR",
-          live: "https://weredar-1.firebaseapp.com/",
-          technologies: "JavaScript, Leaflet, US Navy Lunar API, HTML, CSS",
-        }
-      ],
-      contactIcons: [
-        {
-          id: 1,
-          img: "../static/github.png",
-          link: "https://github.com/paulhighum",
-          description: "GitHub"
-        },{
-          id: 2,
-          img: "../static/linkedin.png",
-          link: "https://www.linkedin.com/in/paul-highum/",
-          description: "LinkedIn"
-        },{
-          id: 3,
-          img: "../static/galvanize.png",
-          link: "https://talent.galvanize.com/students/1835",
-          description: "gTalent"
-        }
-      ]
-    }
+    Contact
   },
   methods: {
     methodName() {
