@@ -84,6 +84,7 @@ export default {
   },
   methods: {
     openModal(e) {
+      e.preventDefault()
       this.currentProject = this.projects.filter(project => {
         return project.id === Number(e.target.id)
       })[0]

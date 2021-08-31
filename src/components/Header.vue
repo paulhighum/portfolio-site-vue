@@ -69,7 +69,7 @@ a {
   #desktop-nav ul {
     display: flex;
     flex-flow: row nowrap;
-    list-style-type: none;
+    /* list-style-type: none; */
   }
 
   #desktop-nav li {

@@ -18,7 +18,7 @@
     </form>
     <div class="contact-icons">
       <div class="contact-icon" v-for="contactIcon in contactIcons" :key="contactIcon.id" @click="visitSite(contactIcon.link)" >
-        <img :src="contactIcon.img" alt="img"/>
+        <img :src="`${publicPath}${contactIcon.img}`" alt="img"/>
         <p>{{contactIcon.description}}</p>
       </div>
     </div>
@@ -36,29 +36,26 @@ export default {
       },
       messageReceived: false,
       returnMessage: "Message Sent!",
+      publicPath: process.env.BASE_URL,
       contactIcons: [
         {
           id: 1,
-          img: "/img/github.png",
+          img: "github.png",
           link: "https://github.com/paulhighum",
           description: "GitHub"
         },{
           id: 2,
-          img: "/img/linkedin.png",
+          img: "linkedin.png",
           link: "https://www.linkedin.com/in/paul-highum/",
           description: "LinkedIn"
-        },{
-          id: 3,
-          img: "/img/galvanize.png",
-          link: "https://talent.galvanize.com/students/1835",
-          description: "gTalent"
         }
       ]
     }
   },
   methods: {
-    sendEmail() {
-      event.preventDefault()
+    // this needs to be refactored with async/await and updated to use a new email proxy
+    sendEmail(e) {
+      e.preventDefault()
       console.log(this.emailObject)
       fetch("https://murmuring-retreat-91093.herokuapp.com/send/", {
         method: "POST",
